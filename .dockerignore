@@ -1,0 +1,6 @@
+.venv
+.ruff_cache
+m[0-9]*_
+.env
+__pycache__
+
