@@ -55,9 +55,9 @@ def validate_sql(sql: str) -> None:
     words = re.findall(r"[A-Za-z_]+", sql.upper())
     if not words or words[0] not in {"SELECT"}:
         raise ValueError("Only SELECT queries are allowed.")
-    forbidden = {"INSERT", "UPDATE", "DELETE", "DROP", "ALTER", "CREATE",
+    not_allowed = {"INSERT", "UPDATE", "DELETE", "DROP", "ALTER", "CREATE",
                  "REPLACE", "PRAGMA", "ATTACH", "DETACH", "VACUUM"}
-    if bad := forbidden & set(words):
+    if bad := not_allowed & set(words):
         raise ValueError(f"The following commands are not allowed: {', '.join(sorted(bad))}")
 
 

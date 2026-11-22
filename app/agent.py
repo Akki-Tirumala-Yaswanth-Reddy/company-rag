@@ -16,6 +16,7 @@ class AgentState(TypedDict, total=False):
     docs: list
     sql_result: dict
     answer: str
+    context: str
     sources: list[str]
     input_tokens: Annotated[int, operator.add]     # reducer: every node's tokens get ADDED
     output_tokens: Annotated[int, operator.add]
@@ -131,6 +132,16 @@ def query_db(state: AgentState) -> dict:
     r = text_to_sql(question)
     return {"sql_result": r, "input_tokens": r["input_tokens"], "output_tokens": r["output_tokens"]}
 
+def format_rows(columns: list[str], rows: list[tuple]) -> str:
+    """Turn SQL results into one readable line per row, e.g.
+    '- name: Vikram Singh | department: Sales | level: L4 | ...'
+    TODO: ~3 lines. zip() each row with columns.
+    """
+    lines = []
+    for row in rows:
+        fields = [f"{c}: {r}" for c, r in zip(columns, row)]
+        lines.append("- " + " | ".join(fields))
+    return "\n".join(lines)
 
 ANSWER_PROMPT = f"""You are Acme Corp's internal assistant for employees.
 Answer using ONLY the policy excerpts and database results provided.
@@ -147,7 +158,8 @@ def synthesize(state: AgentState) -> dict:
         parts.append("Policy excerpts:\n" + format_context(state.get("docs", [])))
     sql = state.get("sql_result") or {}
     if sql.get("rows"):
-        parts.append(f"Database results [DB]:\ncolumns: {sql['columns']}\nrows: {sql['rows']}")
+        parts.append(f"Database query executed: {sql["sql"]}")
+        parts.append(f"Database results [DB]:\n{format_rows(sql["columns"], sql["rows"])}")
     if not parts:
         return {"answer": FALLBACK, "sources": []}
 
@@ -161,7 +173,7 @@ def synthesize(state: AgentState) -> dict:
         sources.append("employees database")
     if answer == FALLBACK:
         sources = []
-    return {"answer": answer, "sources": sources,
+    return {"answer": answer, "context": context, "sources": sources,
             "input_tokens": r["input_tokens"], "output_tokens": r["output_tokens"]}
 
 
