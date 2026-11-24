@@ -1,0 +1,26 @@
+[
+  {
+    "question": "I want to take 6 consecutive days of annual leave. How far in advance do I need to apply, and who approves it?",
+    "reference": "Annual leave of 5 or more consecutive days must be applied for at least 21 days in advance, and it is approved by the reporting manager."
+  },
+  {
+    "question": "What is the maximum hotel cost per night I can claim for a business trip to Pune?",
+    "reference": "Pune is a Tier-2 city for hotel caps, so the cap is INR 4,500 per night (room plus taxes), even though Acme has an office in Pune."
+  },
+  {
+    "question": "Can I email a customer contract to someone outside Acme?",
+    "reference": "Customer contracts are Confidential data. They may be emailed outside Acme only to parties under an NDA, and the email must be encrypted."
+  },
+  {
+    "question": "I'm a confirmed employee and I'm resigning. How long is my notice period, and what happens to my unused annual leave when I leave?",
+    "reference": "The notice period is 60 days for confirmed employees. Any accrued but unused annual leave is encashed at exit at basic salary, up to a maximum of 30 days."
+  },
+  {
+    "question": "I referred a friend for an L5 role and they got hired. How much is my referral bonus and when is it paid?",
+    "reference": "The referral bonus for L5 and above roles is INR 1,00,000. It is paid after the new hire completes 90 days, provided the referring employee is still employed at Acme."
+  },
+  {
+    "question": "Does Acme offer stock options (ESOPs) to employees?",
+    "reference": "I couldn't find this in Acme's policies. Please contact hr@acme.example."
+  }
+]

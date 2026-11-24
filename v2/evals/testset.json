@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1, "origin": "golden", "category": "table",
+    "question": "I want to take 6 consecutive days of annual leave. How far in advance do I need to apply, and who approves it?",
+    "reference": "Annual leave of 5 or more consecutive days must be applied for at least 21 days in advance, and it is approved by the reporting manager."
+  },
+  {
+    "id": 2, "origin": "golden", "category": "table",
+    "question": "What is the maximum hotel cost per night I can claim for a business trip to Pune?",
+    "reference": "Pune is a Tier-2 city for hotel caps, so the cap is INR 4,500 per night (room plus taxes), even though Acme has an office in Pune."
+  },
+  {
+    "id": 3, "origin": "golden", "category": "table",
+    "question": "Can I email a customer contract to someone outside Acme?",
+    "reference": "Customer contracts are Confidential data. They may be emailed outside Acme only to parties under an NDA, and the email must be encrypted."
+  },
+  {
+    "id": 4, "origin": "golden", "category": "multi_section",
+    "question": "I'm a confirmed employee and I'm resigning. How long is my notice period, and what happens to my unused annual leave when I leave?",
+    "reference": "The notice period is 60 days for confirmed employees. Any accrued but unused annual leave is encashed at exit at basic salary, up to a maximum of 30 days."
+  },
+  {
+    "id": 5, "origin": "golden", "category": "condition",
+    "question": "I referred a friend for an L5 role and they got hired. How much is my referral bonus and when is it paid?",
+    "reference": "The referral bonus for L5 and above roles is INR 1,00,000. It is paid after the new hire completes 90 days, provided the referring employee is still employed at Acme."
+  },
+  {
+    "id": 6, "origin": "golden", "category": "unanswerable",
+    "question": "Does Acme offer stock options (ESOPs) to employees?",
+    "reference": "I couldn't find this in Acme's policies. Please contact hr@acme.example."
+  },
+  {
+    "id": 7, "origin": "synthetic_fixed", "category": "single_section",
+    "question": "What allowances do I get for being on call or working night shifts?",
+    "reference": "Employees in an on-call rotation receive INR 1,500 per weekday night and INR 3,000 per weekend day on call, paid with the next month's salary. Employees on a night shift (starting after 7:00 PM) receive a shift allowance of INR 400 per shift and company-arranged cab transport home."
+  },
+  {
+    "id": 8, "origin": "synthetic_fixed", "category": "single_section",
+    "question": "One of my team members is resigning. What is the notice period, can they leave early, and when do they get their full and final settlement?",
+    "reference": "The notice period is 60 days for confirmed employees and 30 days for employees on probation. The company may release an employee early; if the employee asks to leave early, they may pay basic salary for the unserved days (buy-out) if the company agrees, and the company may also waive the shortfall. Full and final settlement is paid within 45 days of the last working day, and relieving and experience letters are issued within 7 working days after the settlement is processed."
+  },
+  {
+    "id": 9, "origin": "synthetic_fixed", "category": "single_section",
+    "question": "My new hire is still on probation. Can they work fully remote or apply for an internal transfer?",
+    "reference": "No. Employees on probation are not eligible for fully remote arrangements or for internal transfers."
+  },
+  {
+    "id": 10, "origin": "synthetic", "category": "single_section",
+    "question": "The Acme Authenticator app is mandatory for what?",
+    "reference": "Multi-factor authentication (MFA) using the Acme Authenticator app is mandatory for email, VPN and all internal tools."
+  },
+  {
+    "id": 11, "origin": "synthetic", "category": "multi_section",
+    "question": "Can I use my personal phone to access the Acme Authenticator app while working from a cafe?",
+    "reference": "Yes, personal phones may be used for the Acme Authenticator app only after enrolling in the mobile device management (MDM) app, which creates a separate work profile. When working from public Wi-Fi such as a cafe, the Acme VPN must be used."
+  },
+  {
+    "id": 12, "origin": "synthetic", "category": "single_section",
+    "question": "What severity level is assigned to a blocked phishing attempt?",
+    "reference": "A blocked phishing attempt is a SEV-4 (low severity) incident."
+  },
+  {
+    "id": 13, "origin": "synthetic_fixed", "category": "multi_section",
+    "question": "How do I request an exception to the information security policy?",
+    "reference": "Exceptions must be requested through the IT Service Desk portal (category \"Security Exception\"), must include a business justification and a compensating control, and must be approved by the CISO. Exceptions are granted for a maximum of 6 months and may be renewed."
+  },
+  {
+    "id": 14, "origin": "synthetic_fixed", "category": "single_section",
+    "question": "Where must service account credentials and API keys be stored, and how often must they be rotated?",
+    "reference": "Service account credentials and API keys must be stored in the AcmeVault secrets store and rotated every 90 days. They must never be committed to source code repositories."
+  },
+  {
+    "id": 15, "origin": "synthetic_fixed", "category": "multi_section",
+    "question": "I'm still on probation. How much annual leave can I take in my first 3 months, and what will my notice period be once I'm confirmed?",
+    "reference": "Employees on probation may take at most 3 days of annual leave during their first 3 months of employment. Once confirmed, the notice period is 60 days."
+  },
+  {
+    "id": 16, "origin": "synthetic_fixed", "category": "multi_section",
+    "question": "so if a guy wants paternity leave and he is on probation what happens to his probation clock and who approves it? i heard maternity pauses the clock but not sure about dads",
+    "reference": "Parental leave, including paternity leave, is available during probation without restriction. The policy states only that maternity leave pauses the probation clock; it does not say that paternity leave does. Paternity leave should be applied for 4 weeks before the start where possible and is approved by the reporting manager."
+  },
+  {
+    "id": 17, "origin": "synthetic_fixed", "category": "single_section",
+    "question": "What are the rules for using the Acme Authenticator app on a personal phone, and can I use my personal laptop for Acme work?",
+    "reference": "Personal phones may be used for email, chat and the Acme Authenticator app only after enrolling in the mobile device management (MDM) app, which creates a separate work profile. Personal laptops and tablets must not be used to access Acme systems, except for the employee self-service pages of AcmePeople through a browser."
+  },
+  {
+    "id": 18, "origin": "new_table", "category": "table",
+    "question": "Which leave types are unpaid?",
+    "reference": "Sabbatical (up to 3 months) and leave without pay (up to 30 days per year) are unpaid."
+  },
+  {
+    "id": 19, "origin": "new_table", "category": "table",
+    "question": "How much per diem do I get on the day I fly back from a domestic business trip?",
+    "reference": "On the departure day and the return day, 75% of the daily rate is paid. The domestic per diem is INR 3,000, so the return day pays INR 2,250."
+  },
+  {
+    "id": 20, "origin": "new_table", "category": "table",
+    "question": "I'm an L4 employee. Can I get a premium economy upgrade on an international flight?",
+    "reference": "No. Premium economy upgrades are not reimbursed for L1 to L4 employees; they are allowed only for L5 and above, on international flights of 5 to 8 hours."
+  }
+]

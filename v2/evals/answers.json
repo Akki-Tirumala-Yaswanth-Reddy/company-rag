@@ -1,0 +1,68 @@
+[
+  {
+    "user_input": "I want to take 6 consecutive days of annual leave. How far in advance do I need to apply, and who approves it?",
+    "response": "For 6 consecutive days of annual leave, you must apply at least 21 days in advance, and the request will be approved by your reporting manager [1]. All leave requests must be submitted through the AcmePeople HR portal [2].",
+    "retrieved_contexts": [
+      "14. How to Apply\n14.1 Approval timelines\n| Leave type                                | Apply at least                       | Approved by              |\n|-------------------------------------------|--------------------------------------|--------------------------|\n| Annual leave (1-4 days)                   | 7 days in advance                    | Reporting manager        |\n| Annual leave (5 or more consecutive days) | 21 days in advance                   | Reporting manager        |\n| Sick leave                                | Within 2 working days of returning   | Reporting manager        |\n| Maternity leave                           | 8 weeks before start                 | HR Business Partner      |\n| Paternity leave                           | 4 weeks before start, where possible | Reporting manager        |\n| Sabbatical                                | 60 days in advance                   | Reporting manager and VP |\n| Extended medical leave                    | As soon as practical                 | HR Business Partner      |",
+      "14. How to Apply\nAll leave must be requested in the AcmePeople HR portal. Planned annual leave must be applied for at least 7 days in advance and approved by the reporting manager. Sick leave may be applied for retrospectively within 2 working days of returning.",
+      "11. Sabbatical\nConfirmed employees with at least 4 years of completed service may apply for an unpaid sabbatical of 1 to 3 months for study, caregiving or personal reasons. Applications must be made at least 60 days in advance and require approval from the reporting manager and a Vice President (VP). During a sabbatical, annual leave and sick leave do not accrue, but group health insurance continues. A second sabbatical may be taken only after a further 4 years of service.",
+      "18. Frequently Asked Questions\nMy manager has not approved my leave and it starts tomorrow.\nRequests not actioned within 3 working days escalate automatically. If your leave starts in less than 3 working days, contact your manager directly or raise a ticket with HR at hr@acme.example."
+    ],
+    "reference": "Annual leave of 5 or more consecutive days must be applied for at least 21 days in advance, and it is approved by the reporting manager."
+  },
+  {
+    "user_input": "What is the maximum hotel cost per night I can claim for a business trip to Pune?",
+    "response": "The maximum hotel cost you can claim per night for a business trip to Pune is INR 4,500. This is because Pune is classified as a Tier-2 city under Acme's policy, which sets the cap at INR 4,500 per night (room plus taxes) [1], [2].",
+    "retrieved_contexts": [
+      "14. Frequently Asked Questions\nIs Pune a Tier-1 city for hotels?\nNo. Pune is Tier-2 for the hotel cap, so the cap is INR 4,500 per night, even though Acme has an office in Pune.",
+      "8. Hotels\n8.1 Hotel cap table\n| Location                                                                   | Cap per night (room plus taxes)   | Notes                                                                          |\n|----------------------------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------|\n| Tier-2: all other Indian cities (for example Pune, Chennai, Kochi, Jaipur) | INR 4,500                         |                                                                                |\n",
+      "8. Hotels\n8.3 Staying with friends or family\nEmployees who stay with friends or family instead of a hotel may claim a flat INR 1,000 per night (domestic) or USD 30 per night (international) in addition to per diem, with no receipt required.",
+      "8. Hotels\n8.1 Hotel cap table\n| Location                                                                   | Cap per night (room plus taxes)   | Notes                                                                          |\n|----------------------------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------|\n| Tier-1: Bengaluru, Mumbai, Delhi NCR, Hyderabad                            | INR 7,000                         | Delhi NCR includes Gurugram and Noida                                          |\n"
+    ],
+    "reference": "Pune is a Tier-2 city for hotel caps, so the cap is INR 4,500 per night (room plus taxes), even though Acme has an office in Pune."
+  },
+  {
+    "user_input": "Can I email a customer contract to someone outside Acme?",
+    "response": "Yes, you may email a customer contract to someone outside Acme only if that party is under a Non-Disclosure Agreement (NDA) and the email is encrypted. Customer contracts are classified as Confidential data, which permits external sharing solely to parties under an NDA with encryption [1], [4]. Restricted data, such as customer payment data, must never be emailed outside Acme [4].",
+    "retrieved_contexts": [
+      "17. Frequently Asked Questions\nCan I paste a customer contract into an approved AI tool to summarise it?\nYes. Customer contracts are Confidential, and approved AI tools may be used with Confidential data. They may not be used with Restricted data such as customer payment data.",
+      "13. Contacts\nHR queries: hr@acme.example. Payroll queries: payroll@acme.example. IT Service Desk: extension 4000.\n| Purpose                          | Contact                 |\n|----------------------------------|-------------------------|\n| Compliance and gift declarations | compliance@acme.example |\n| Internal Committee (POSH)        | ic@acme.example         |\n| Ethics and whistleblowing        | ethics@acme.example     |\n| Security incidents (24x7)        | Extension 4400          |",
+      "1. Scope\nThis policy applies to all employees, contractors and interns who access Acme Corp systems or data.\nIt covers company-issued devices, personally owned devices used for work, cloud services, source code, and data in any form, including paper. Third-party vendors with access to Acme data must also comply through their contracts.",
+      "7. Data Classification\nAcme data is classified into four levels: Public, Internal, Confidential and Restricted. Restricted data (for example customer payment data and salary data) may only be shared with named individuals approved by the data owner.\n\n7.1 Classification levels and handling rules\n\n| Level | Examples | Sharing | Storage | Email outside Acme |\n| - | - | - | - | - |\n| Public | Marketing website, press releases, published blog posts | Anyone | Any approved system | Allowed |\n| Internal | Org charts, internal wiki, policies such as this one | All Acme employees and contractors | Approved Acme systems | Not allowed without manager approval |\n| Confidential | Customer contracts, source code, product roadmaps, unreleased financials | Employees with a business need | Approved Acme systems; encrypted in transit | Only to parties under NDA, encrypted |\n| Restricted | Customer payment data, salary data, government ID numbers, health information | Named individuals approved by the data owner | Restricted-zone systems only; encrypted at rest and in transit | Never |\n"
+    ],
+    "reference": "Customer contracts are Confidential data. They may be emailed outside Acme only to parties under an NDA, and the email must be encrypted."
+  },
+  {
+    "user_input": "I'm a confirmed employee and I'm resigning. How long is my notice period, and what happens to my unused annual leave when I leave?",
+    "response": "As a confirmed employee, your notice period is 60 days [3]. Regarding your unused annual leave, it will be encashed at exit up to a maximum of 30 days at basic salary [4]. Please note that annual leave cannot be taken during the notice period unless approved by your manager, and any balance exceeding 30 days does not carry over or get paid out beyond that limit [1], [2].",
+    "retrieved_contexts": [
+      "4. Notice Period\n4.1 Resignation process\nResignations are submitted in AcmePeople and accepted by the reporting manager. The notice period starts on the day after the resignation is submitted. Annual leave may not be taken during the notice period except with manager approval; unused annual leave is encashed at exit up to 30 days, as described in the Leave Policy.",
+      "18. Frequently Asked Questions\nCan I encash unused annual leave while I am still employed?\nNo. Annual leave is encashed only on exit, up to 30 days. Balances above 10 days lapse on 31 December each year.",
+      "4. Notice Period\nThe notice period is 60 days for confirmed employees and 30 days for employees still on probation. Notice period buy-out is at the company's discretion.",
+      "4. Annual Leave\n4.2 Joiners and leavers\nEmployees who join part-way through a month accrue leave for that month only if they join on or before the 15th. Employees who leave Acme Corp accrue leave up to their last working day on the same basis. On exit, any accrued but unused annual leave is encashed at basic salary, up to a maximum of 30 days. Leave taken in excess of the accrued balance at exit is recovered from the final settlement."
+    ],
+    "reference": "The notice period is 60 days for confirmed employees. Any accrued but unused annual leave is encashed at exit at basic salary, up to a maximum of 30 days."
+  },
+  {
+    "user_input": "I referred a friend for an L5 role and they got hired. How much is my referral bonus and when is it paid?",
+    "response": "You will receive a referral bonus of INR 1,00,000, which will be paid after your friend completes 90 days, provided you are still employed at Acme on the payout date [1], [2].",
+    "retrieved_contexts": [
+      "12. Frequently Asked Questions\nI referred a friend for an L5 role. How much is the bonus and when is it paid?\nINR 1,00,000, paid after your friend completes 90 days, provided you are still employed at Acme.",
+      "7. Employee Referral Bonus\nEmployees who refer a candidate who is hired receive a referral bonus of INR 50,000, paid after the new hire completes 90 days. Referrals for L5 and above roles receive INR 1,00,000. HR and hiring managers for the role are not eligible.",
+      "14. Revision History\n|   Version | Effective date   | Summary of changes                                                                                                                |\n|-----------|------------------|-----------------------------------------------------------------------------------------------------------------------------------|\n|       1.5 | 1 January 2026   | Referral bonus increased from INR 40,000 to INR 50,000; L5+ referral bonus introduced; flexible start window widened to 11:00 AM. |\n|       1.4 | 1 January 2025   | Learning budget increased from INR 30,000 to INR 40,000.                                                                          |\n",
+      "7. Employee Referral Bonus\n7.1 Additional rules\n- The referral must be submitted through the AcmeCareers referral portal before the candidate applies directly or through an agency.\n- If two employees refer the same candidate, the first referral recorded in the portal is eligible.\n- The referring employee must still be employed by Acme Corp on the payout date.\n- Re-hires of former Acme employees who left within the last 12 months are not eligible for a referral bonus.\n- Interns and contractors are not eligible to receive referral bonuses."
+    ],
+    "reference": "The referral bonus for L5 and above roles is INR 1,00,000. It is paid after the new hire completes 90 days, provided the referring employee is still employed at Acme."
+  },
+  {
+    "user_input": "Does Acme offer stock options (ESOPs) to employees?",
+    "response": "I couldn't find this in Acme's policies. Please contact hr@acme.example.",
+    "retrieved_contexts": [
+      "2. Job Levels\nAcme Corp uses eight job levels. Levels determine some entitlements described in other policies, such as business-class flights and comp-off eligibility.",
+      "2. Hybrid Work\n2.3 Working from another Acme office\nEmployees may work from any Acme office on a given day by booking a desk in AcmeSpaces. Such days count as office days. Travel to another office for personal convenience is not reimbursed.",
+      "2. Hybrid Work\n2.1 Assigned office\nEvery employee has one assigned office, shown in AcmePeople. Acme offices are in Bengaluru (headquarters), Hyderabad, Mumbai, Delhi NCR (Gurugram) and Pune. Attendance is measured by badge swipes and reviewed monthly by team leads. Attendance below 3 days per week for two consecutive months is discussed in the employee's next performance review.",
+      "1. Purpose and Scope\nThis policy sets out where Acme Corp employees work, the allowances paid for working from home, and the rules for booking and claiming business travel. It applies to all full-time employees on the India payroll. Contractors follow the travel terms in their contracts; interns may travel on Acme business only with VP approval and are reimbursed under the same caps as L1 employees."
+    ],
+    "reference": "I couldn't find this in Acme's policies. Please contact hr@acme.example."
+  }
+]

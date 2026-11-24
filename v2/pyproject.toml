@@ -1,0 +1,22 @@
+[project]
+name = "v2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "A.T Yaswanth Reddy", email = "atyaswanthimp@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "docling>=2.152.0",
+    "langchain-docling>=3.0.0",
+    "langchain-google-genai>=4.5.2",
+    "langchain-milvus>=0.4.0",
+    "langchain-ollama>=1.2.0",
+    "langchain-openai>=1.8.5",
+    "matplotlib>=3.11.2",
+    "pymilvus[milvus-lite]>=3.0.3",
+    "python-dotenv>=1.2.4",
+    "ragas>=0.4.4",
+    "rapidfuzz>=3.14.6",
+]

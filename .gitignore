@@ -1,5 +1,8 @@
 .venv
+.DS_Store
 .ruff_cache
 m[0-9]*_
 .env
 __pycache__
+milvus.db
+.DS_Store

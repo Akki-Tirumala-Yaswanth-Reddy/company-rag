@@ -160,6 +160,7 @@ def synthesize(state: AgentState) -> dict:
     if sql.get("rows"):
         parts.append(f"Database query executed: {sql["sql"]}")
         parts.append(f"Database results [DB]:\n{format_rows(sql["columns"], sql["rows"])}")
+        parts.append(f"Use ")
     if not parts:
         return {"answer": FALLBACK, "sources": []}
 

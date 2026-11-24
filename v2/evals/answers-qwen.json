@@ -1,0 +1,222 @@
+[
+  {
+    "user_input": "I want to take 6 consecutive days of annual leave. How far in advance do I need to apply, and who approves it?",
+    "response": "You need to apply for 6 consecutive days of annual leave at least 21 days in advance, and it must be approved by your reporting manager [1]. All leave requests must be submitted through the AcmePeople HR portal [2].",
+    "retrieved_contexts": [
+      "14. How to Apply\n14.1 Approval timelines\n| Leave type                                | Apply at least                       | Approved by              |\n|-------------------------------------------|--------------------------------------|--------------------------|\n| Annual leave (1-4 days)                   | 7 days in advance                    | Reporting manager        |\n| Annual leave (5 or more consecutive days) | 21 days in advance                   | Reporting manager        |\n| Sick leave                                | Within 2 working days of returning   | Reporting manager        |\n| Maternity leave                           | 8 weeks before start                 | HR Business Partner      |\n| Paternity leave                           | 4 weeks before start, where possible | Reporting manager        |\n| Sabbatical                                | 60 days in advance                   | Reporting manager and VP |\n| Extended medical leave                    | As soon as practical                 | HR Business Partner      |",
+      "14. How to Apply\nAll leave must be requested in the AcmePeople HR portal. Planned annual leave must be applied for at least 7 days in advance and approved by the reporting manager. Sick leave may be applied for retrospectively within 2 working days of returning.",
+      "11. Sabbatical\nConfirmed employees with at least 4 years of completed service may apply for an unpaid sabbatical of 1 to 3 months for study, caregiving or personal reasons. Applications must be made at least 60 days in advance and require approval from the reporting manager and a Vice President (VP). During a sabbatical, annual leave and sick leave do not accrue, but group health insurance continues. A second sabbatical may be taken only after a further 4 years of service.",
+      "18. Frequently Asked Questions\nMy manager has not approved my leave and it starts tomorrow.\nRequests not actioned within 3 working days escalate automatically. If your leave starts in less than 3 working days, contact your manager directly or raise a ticket with HR at hr@acme.example."
+    ],
+    "reference": "Annual leave of 5 or more consecutive days must be applied for at least 21 days in advance, and it is approved by the reporting manager."
+  },
+  {
+    "user_input": "What is the maximum hotel cost per night I can claim for a business trip to Pune?",
+    "response": "The maximum hotel cost you can claim per night for a business trip to Pune is INR 4,500. This is because Pune is classified as a Tier-2 city under Acme's policy, which sets the cap at INR 4,500 per night (room plus taxes) [1][2].",
+    "retrieved_contexts": [
+      "14. Frequently Asked Questions\nIs Pune a Tier-1 city for hotels?\nNo. Pune is Tier-2 for the hotel cap, so the cap is INR 4,500 per night, even though Acme has an office in Pune.",
+      "8. Hotels\n8.1 Hotel cap table\n| Location                                                                   | Cap per night (room plus taxes)   | Notes                                                                          |\n|----------------------------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------|\n| Tier-2: all other Indian cities (for example Pune, Chennai, Kochi, Jaipur) | INR 4,500                         |                                                                                |\n",
+      "8. Hotels\n8.3 Staying with friends or family\nEmployees who stay with friends or family instead of a hotel may claim a flat INR 1,000 per night (domestic) or USD 30 per night (international) in addition to per diem, with no receipt required.",
+      "8. Hotels\n8.1 Hotel cap table\n| Location                                                                   | Cap per night (room plus taxes)   | Notes                                                                          |\n|----------------------------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------|\n| Tier-1: Bengaluru, Mumbai, Delhi NCR, Hyderabad                            | INR 7,000                         | Delhi NCR includes Gurugram and Noida                                          |\n"
+    ],
+    "reference": "Pune is a Tier-2 city for hotel caps, so the cap is INR 4,500 per night (room plus taxes), even though Acme has an office in Pune."
+  },
+  {
+    "user_input": "Can I email a customer contract to someone outside Acme?",
+    "response": "Yes, you may email a customer contract to someone outside Acme only if that party is under a Non-Disclosure Agreement (NDA) and the email is encrypted. Customer contracts are classified as Confidential data, which permits external sharing solely to parties under an NDA with encryption [1], [4].",
+    "retrieved_contexts": [
+      "17. Frequently Asked Questions\nCan I paste a customer contract into an approved AI tool to summarise it?\nYes. Customer contracts are Confidential, and approved AI tools may be used with Confidential data. They may not be used with Restricted data such as customer payment data.",
+      "13. Contacts\nHR queries: hr@acme.example. Payroll queries: payroll@acme.example. IT Service Desk: extension 4000.\n| Purpose                          | Contact                 |\n|----------------------------------|-------------------------|\n| Compliance and gift declarations | compliance@acme.example |\n| Internal Committee (POSH)        | ic@acme.example         |\n| Ethics and whistleblowing        | ethics@acme.example     |\n| Security incidents (24x7)        | Extension 4400          |",
+      "1. Scope\nThis policy applies to all employees, contractors and interns who access Acme Corp systems or data.\nIt covers company-issued devices, personally owned devices used for work, cloud services, source code, and data in any form, including paper. Third-party vendors with access to Acme data must also comply through their contracts.",
+      "7. Data Classification\nAcme data is classified into four levels: Public, Internal, Confidential and Restricted. Restricted data (for example customer payment data and salary data) may only be shared with named individuals approved by the data owner.\n\n7.1 Classification levels and handling rules\n\n| Level | Examples | Sharing | Storage | Email outside Acme |\n| - | - | - | - | - |\n| Public | Marketing website, press releases, published blog posts | Anyone | Any approved system | Allowed |\n| Internal | Org charts, internal wiki, policies such as this one | All Acme employees and contractors | Approved Acme systems | Not allowed without manager approval |\n| Confidential | Customer contracts, source code, product roadmaps, unreleased financials | Employees with a business need | Approved Acme systems; encrypted in transit | Only to parties under NDA, encrypted |\n| Restricted | Customer payment data, salary data, government ID numbers, health information | Named individuals approved by the data owner | Restricted-zone systems only; encrypted at rest and in transit | Never |\n"
+    ],
+    "reference": "Customer contracts are Confidential data. They may be emailed outside Acme only to parties under an NDA, and the email must be encrypted."
+  },
+  {
+    "user_input": "I'm a confirmed employee and I'm resigning. How long is my notice period, and what happens to my unused annual leave when I leave?",
+    "response": "As a confirmed employee, your notice period is 60 days [3]. Regarding your unused annual leave, it will be encashed at exit up to a maximum of 30 days at basic salary [4]. Please note that annual leave cannot be taken during the notice period unless approved by your manager, and any balance exceeding 30 days does not carry over or get paid out beyond that limit [1][2].",
+    "retrieved_contexts": [
+      "4. Notice Period\n4.1 Resignation process\nResignations are submitted in AcmePeople and accepted by the reporting manager. The notice period starts on the day after the resignation is submitted. Annual leave may not be taken during the notice period except with manager approval; unused annual leave is encashed at exit up to 30 days, as described in the Leave Policy.",
+      "18. Frequently Asked Questions\nCan I encash unused annual leave while I am still employed?\nNo. Annual leave is encashed only on exit, up to 30 days. Balances above 10 days lapse on 31 December each year.",
+      "4. Notice Period\nThe notice period is 60 days for confirmed employees and 30 days for employees still on probation. Notice period buy-out is at the company's discretion.",
+      "4. Annual Leave\n4.2 Joiners and leavers\nEmployees who join part-way through a month accrue leave for that month only if they join on or before the 15th. Employees who leave Acme Corp accrue leave up to their last working day on the same basis. On exit, any accrued but unused annual leave is encashed at basic salary, up to a maximum of 30 days. Leave taken in excess of the accrued balance at exit is recovered from the final settlement."
+    ],
+    "reference": "The notice period is 60 days for confirmed employees. Any accrued but unused annual leave is encashed at exit at basic salary, up to a maximum of 30 days."
+  },
+  {
+    "user_input": "I referred a friend for an L5 role and they got hired. How much is my referral bonus and when is it paid?",
+    "response": "You will receive a referral bonus of INR 1,00,000, which will be paid after your friend completes 90 days, provided you are still employed at Acme on the payout date [1], [2].",
+    "retrieved_contexts": [
+      "12. Frequently Asked Questions\nI referred a friend for an L5 role. How much is the bonus and when is it paid?\nINR 1,00,000, paid after your friend completes 90 days, provided you are still employed at Acme.",
+      "7. Employee Referral Bonus\nEmployees who refer a candidate who is hired receive a referral bonus of INR 50,000, paid after the new hire completes 90 days. Referrals for L5 and above roles receive INR 1,00,000. HR and hiring managers for the role are not eligible.",
+      "14. Revision History\n|   Version | Effective date   | Summary of changes                                                                                                                |\n|-----------|------------------|-----------------------------------------------------------------------------------------------------------------------------------|\n|       1.5 | 1 January 2026   | Referral bonus increased from INR 40,000 to INR 50,000; L5+ referral bonus introduced; flexible start window widened to 11:00 AM. |\n|       1.4 | 1 January 2025   | Learning budget increased from INR 30,000 to INR 40,000.                                                                          |\n",
+      "7. Employee Referral Bonus\n7.1 Additional rules\n- The referral must be submitted through the AcmeCareers referral portal before the candidate applies directly or through an agency.\n- If two employees refer the same candidate, the first referral recorded in the portal is eligible.\n- The referring employee must still be employed by Acme Corp on the payout date.\n- Re-hires of former Acme employees who left within the last 12 months are not eligible for a referral bonus.\n- Interns and contractors are not eligible to receive referral bonuses."
+    ],
+    "reference": "The referral bonus for L5 and above roles is INR 1,00,000. It is paid after the new hire completes 90 days, provided the referring employee is still employed at Acme."
+  },
+  {
+    "user_input": "Does Acme offer stock options (ESOPs) to employees?",
+    "response": "I couldn't find this in Acme's policies. Please contact hr@acme.example.",
+    "retrieved_contexts": [
+      "2. Job Levels\nAcme Corp uses eight job levels. Levels determine some entitlements described in other policies, such as business-class flights and comp-off eligibility.",
+      "2. Hybrid Work\n2.3 Working from another Acme office\nEmployees may work from any Acme office on a given day by booking a desk in AcmeSpaces. Such days count as office days. Travel to another office for personal convenience is not reimbursed.",
+      "2. Hybrid Work\n2.1 Assigned office\nEvery employee has one assigned office, shown in AcmePeople. Acme offices are in Bengaluru (headquarters), Hyderabad, Mumbai, Delhi NCR (Gurugram) and Pune. Attendance is measured by badge swipes and reviewed monthly by team leads. Attendance below 3 days per week for two consecutive months is discussed in the employee's next performance review.",
+      "1. Purpose and Scope\nThis policy sets out where Acme Corp employees work, the allowances paid for working from home, and the rules for booking and claiming business travel. It applies to all full-time employees on the India payroll. Contractors follow the travel terms in their contracts; interns may travel on Acme business only with VP approval and are reimbursed under the same caps as L1 employees."
+    ],
+    "reference": "I couldn't find this in Acme's policies. Please contact hr@acme.example."
+  },
+  {
+    "user_input": "What allowances do I get for being on call or working night shifts?",
+    "response": "For on-call duties, you receive an allowance of INR 1,500 per weekday night and INR 3,000 per weekend day on call, paid with the next month's salary [1]. Additionally, if you are part of an on-call rotation, working on a weekend is compensated under these On-Call Allowance guidelines and does not generate compensatory off [3].\n\nFor night shifts (starting after 7:00 PM), employees receive a shift allowance of INR 400 per shift along with company-arranged cab transport home [2].",
+    "retrieved_contexts": [
+      "1. Working Hours\n1.2 Overtime and weekend work\nEmployees at L1 to L4 who are asked to work on a weekend or public holiday receive compensatory off, as described in the Leave Policy. Employees who are part of an on-call rotation receive an on-call allowance of INR 1,500 per weekday night and INR 3,000 per weekend day on call, paid with the next month's salary.",
+      "1. Working Hours\n1.3 Shift roles\nCustomer Support and Site Reliability teams work in shifts. Employees on a night shift (starting after 7:00 PM) receive a shift allowance of INR 400 per shift and company-arranged cab transport home.",
+      "10. Compensatory Off\nEmployees at levels L1 to L4 who are asked by their reporting manager to work on a weekend or public holiday receive 1 day of compensatory off (comp-off) for each full day worked, or half a day for 4 or more hours worked. Comp-off must be recorded in AcmePeople within 7 days of the day worked and expires if not used within 60 days. Employees at L5 and above are not eligible for comp-off.\nWorking on a weekend for on-call duties is compensated under the On-Call Allowance guidelines and does not create comp-off.",
+      "12. Frequently Asked Questions\nI started at 11:00 AM. When can I log off?\nAt 8:00 PM, as the working day is 9 hours including lunch. You must also be available during core hours (11:00 AM to 4:00 PM)."
+    ],
+    "reference": "Employees in an on-call rotation receive INR 1,500 per weekday night and INR 3,000 per weekend day on call, paid with the next month's salary. Employees on a night shift (starting after 7:00 PM) receive a shift allowance of INR 400 per shift and company-arranged cab transport home."
+  },
+  {
+    "user_input": "One of my team members is resigning. What is the notice period, can they leave early, and when do they get their full and final settlement?",
+    "response": "The notice period is 60 days for confirmed employees and 30 days for employees still on probation [4]. An employee may leave early if the company releases them before the end of the notice period, or if the employee pays basic salary for the unserved days (buy-out) with the company's agreement [2]. The full and final settlement is paid within 45 days of the last working day [3].",
+    "retrieved_contexts": [
+      "4. Notice Period\n4.1 Resignation process\nResignations are submitted in AcmePeople and accepted by the reporting manager. The notice period starts on the day after the resignation is submitted. Annual leave may not be taken during the notice period except with manager approval; unused annual leave is encashed at exit up to 30 days, as described in the Leave Policy.",
+      "4. Notice Period\n4.2 Early release and buy-out\nThe company may release an employee before the end of the notice period. Where the employee asks to leave early, they may pay basic salary for the unserved days (buy-out), if the company agrees. The company may also waive the shortfall.",
+      "4. Notice Period\n4.3 Exit formalities\nOn the last working day, employees must return their laptop, access card and any other company equipment to IT. System access is removed within 24 hours. Full and final settlement is paid within 45 days of the last working day. Relieving and experience letters are issued within 7 working days after the settlement is processed.",
+      "4. Notice Period\nThe notice period is 60 days for confirmed employees and 30 days for employees still on probation. Notice period buy-out is at the company's discretion."
+    ],
+    "reference": "The notice period is 60 days for confirmed employees and 30 days for employees on probation. The company may release an employee early; if the employee asks to leave early, they may pay basic salary for the unserved days (buy-out) if the company agrees, and the company may also waive the shortfall. Full and final settlement is paid within 45 days of the last working day, and relieving and experience letters are issued within 7 working days after the settlement is processed."
+  },
+  {
+    "user_input": "My new hire is still on probation. Can they work fully remote or apply for an internal transfer?",
+    "response": "No, your new hire cannot work fully remote or apply for an internal transfer while on probation. Employees on probation are explicitly not eligible for fully remote arrangements or internal transfers [2]. Additionally, fully remote arrangements are only available after completing probation [1].",
+    "retrieved_contexts": [
+      "3. Fully Remote Arrangements\n3.1 Eligibility\nEmployees may apply for a fully remote arrangement only after completing probation. Roles that require physical access to labs, hardware or secure facilities are not eligible. Applications are submitted in AcmePeople with the reporting manager's endorsement and then routed to the VP.",
+      "3. Probation\n3.2 Restrictions during probation\nEmployees on probation:\n- may take at most 3 days of annual leave during their first 3 months (see the Leave Policy);\n- are not eligible for fully remote arrangements or sabbaticals;\n- are not eligible for internal transfers;\n- have a notice period of 30 days.\nMaternity leave pauses the probation clock.",
+      "3. Fully Remote Arrangements\n3.2 Location\nFully remote employees must live and work in India. Working from outside India for more than 14 days in a calendar year requires a separate approval from HR and the Tax team, because it can create tax and immigration obligations. Fully remote employees must keep an address on file in AcmePeople and update it within 7 days of moving.",
+      "11. Internal Transfers\nConfirmed employees who have spent at least 12 months in their current role may apply for open internal roles in AcmeCareers. The current manager is informed once the employee is shortlisted. Transfers take effect within 60 days of an offer."
+    ],
+    "reference": "No. Employees on probation are not eligible for fully remote arrangements or for internal transfers."
+  },
+  {
+    "user_input": "The Acme Authenticator app is mandatory for what?",
+    "response": "The Acme Authenticator app is mandatory for email, VPN and all internal tools [3]. Additionally, hardware security keys are mandatory for administrators of production systems and for the Finance and HR systems teams, while SMS codes are not accepted as a second factor [1]. Personal phones may be used for the Acme Authenticator app only after enrolling in the mobile device management (MDM) app [2].",
+    "retrieved_contexts": [
+      "3. Passwords and MFA\n3.2 MFA details\nSMS codes are not accepted as a second factor. Users who lose access to the Acme Authenticator app must contact the IT Service Desk, which will verify identity by video call before resetting MFA. Hardware security keys are mandatory for administrators of production systems and for the Finance and HR systems teams.",
+      "5. Devices\n5.2 Personal devices (BYOD)\nPersonal phones may be used for email, chat and the Acme Authenticator app only after enrolling in the mobile device management (MDM) app, which creates a separate work profile. Personal laptops and tablets must not be used to access Acme systems, except for the employee self-service pages of AcmePeople through a browser.",
+      "3. Passwords and MFA\nPasswords must be at least 14 characters long and must be changed every 180 days. Multi-factor authentication (MFA) using the Acme Authenticator app is mandatory for email, VPN and all internal tools.",
+      "9. Use of AI Tools\nOnly AI tools listed as approved in the Acme Software Centre may be used with Acme data. Approved tools may be used with Public, Internal and Confidential data. Restricted data must never be entered into any AI tool, approved or not. Code generated by AI tools must be reviewed by an engineer before merging, as with any other code. Unapproved AI tools may be used only with Public data."
+    ],
+    "reference": "Multi-factor authentication (MFA) using the Acme Authenticator app is mandatory for email, VPN and all internal tools."
+  },
+  {
+    "user_input": "Can I use my personal phone to access the Acme Authenticator app while working from a cafe?",
+    "response": "Yes, you can use your personal phone for the Acme Authenticator app, but only after enrolling it in the mobile device management (MDM) app to create a separate work profile. Additionally, when working from a cafe (a public Wi-Fi network), you must use the Acme VPN.\n\n**Conditions:**\n*   **Device Enrollment:** Personal phones may be used for the Acme Authenticator app only after enrolling in the MDM app [1].\n*   **Network Security:** The Acme VPN must be used whenever working from public Wi-Fi networks such as cafes [4].",
+    "retrieved_contexts": [
+      "5. Devices\n5.2 Personal devices (BYOD)\nPersonal phones may be used for email, chat and the Acme Authenticator app only after enrolling in the mobile device management (MDM) app, which creates a separate work profile. Personal laptops and tablets must not be used to access Acme systems, except for the employee self-service pages of AcmePeople through a browser.",
+      "17. Frequently Asked Questions\nCan I use my personal laptop to check email while my company laptop is being repaired?\nNo. Ask the IT Service Desk for a loaner laptop. Personal laptops may only be used for AcmePeople self-service in a browser.",
+      "3. Passwords and MFA\n3.2 MFA details\nSMS codes are not accepted as a second factor. Users who lose access to the Acme Authenticator app must contact the IT Service Desk, which will verify identity by video call before resetting MFA. Hardware security keys are mandatory for administrators of production systems and for the Finance and HR systems teams.",
+      "6. Networks\nThe Acme VPN must be used whenever working from public Wi-Fi networks such as cafes, airports or hotels."
+    ],
+    "reference": "Yes, personal phones may be used for the Acme Authenticator app only after enrolling in the mobile device management (MDM) app, which creates a separate work profile. When working from public Wi-Fi such as a cafe, the Acme VPN must be used."
+  },
+  {
+    "user_input": "What severity level is assigned to a blocked phishing attempt?",
+    "response": "A blocked phishing attempt is assigned SEV-4 (low). [1]",
+    "retrieved_contexts": [
+      "11. Security Incidents\n11.2 Severity levels\nSecurity Operations assigns each incident a severity from SEV-1 (critical, for example Restricted data exposed) to SEV-4 (low, for example a blocked phishing attempt). SEV-1 and SEV-2 incidents are escalated to the CISO within 30 minutes. Incidents involving personal data are assessed by the Legal team for regulatory notification under the Digital Personal Data Protection Act.",
+      "10. Phishing\n10.2 Phishing simulations\nSecurity Operations sends simulated phishing emails every month. Users who fail 2 simulations in a rolling 6-month period must complete a 30-minute refresher training within 14 days.",
+      "10. Phishing\n10.1 If you clicked a link or entered credentials\nReport it immediately to the Security Incident hotline (extension 4400), change your password from a different device, and do not shut down your laptop, as this can destroy evidence. There is no penalty for reporting a click; the penalty applies to not reporting.",
+      "10. Phishing\nSuspected phishing emails must be reported within 1 hour using the 'Report Phish' button in the email client, or by emailing security@acme.example. Do not forward the suspicious email to colleagues."
+    ],
+    "reference": "A blocked phishing attempt is a SEV-4 (low severity) incident."
+  },
+  {
+    "user_input": "How do I request an exception to the information security policy?",
+    "response": "To request an exception to the information security policy, you must submit your request through the IT Service Desk portal under the category \"Security Exception\" [2]. Your request must include a business justification and a compensating control [1]. The request will be reviewed by the Chief Information Security Officer (CISO), who is responsible for approving exceptions [3]. If approved, the exception is granted for a maximum of 6 months and may be renewed [1].",
+    "retrieved_contexts": [
+      "15. Exceptions\nExceptions to this policy must be requested through the IT Service Desk portal, include a business justification and a compensating control, and be approved by the CISO. Exceptions are granted for a maximum of 6 months and may be renewed.",
+      "18. Contacts\n| Purpose                                 | Contact                                               |\n|-----------------------------------------|-------------------------------------------------------|\n| Security questions and phishing reports | security@acme.example                                 |\n| Security Incident hotline (24x7)        | Extension 4400                                        |\n| IT Service Desk                         | Extension 4000                                        |\n| Policy exceptions                       | IT Service Desk portal, category \"Security Exception\" |",
+      "2. Roles and Responsibilities\n| Role                                      | Responsibility                                                     |\n|-------------------------------------------|--------------------------------------------------------------------|\n| Chief Information Security Officer (CISO) | Owns this policy, approves exceptions, leads incident response     |\n| Security Operations team                  | Monitors alerts, runs phishing simulations, investigates incidents |\n| IT Service Desk (extension 4000)          | Device setup, account access, lost device reports                  |\n| Data owners                               | Classify their data and approve access to Restricted data          |\n| Managers                                  | Approve access for their team and review it quarterly              |\n| All users                                 | Follow this policy and report incidents promptly                   |",
+      "5. Devices\n5.3 USB exceptions\nWhere a role requires USB storage (for example hardware testing), the CISO may approve an exception for a specific encrypted, company-issued USB drive for up to 6 months. Exceptions are recorded in the exceptions register."
+    ],
+    "reference": "Exceptions must be requested through the IT Service Desk portal (category \"Security Exception\"), must include a business justification and a compensating control, and must be approved by the CISO. Exceptions are granted for a maximum of 6 months and may be renewed."
+  },
+  {
+    "user_input": "Where must service account credentials and API keys be stored, and how often must they be rotated?",
+    "response": "Service account credentials and API keys must be stored in the AcmeVault secrets store and rotated every 90 days [1].",
+    "retrieved_contexts": [
+      "3. Passwords and MFA\n3.3 Service accounts and API keys\nService account credentials and API keys must be stored in the AcmeVault secrets store and rotated every 90 days. Secrets must never be committed to source code repositories. Secret scanning runs on all repositories and blocks commits that contain credentials.",
+      "19. Revision History\n|   Version | Effective date   | Summary of changes                                                                                                            |\n|-----------|------------------|-------------------------------------------------------------------------------------------------------------------------------|\n|       4.1 | 1 July 2026      | Added Use of AI Tools section; password rotation changed from 90 to 180 days; minimum length raised from 12 to 14 characters. |\n|       4.0 | 1 January 2025   | SMS removed as an MFA factor; four-level data classification introduced (previously three levels).                            |\n",
+      "3. Passwords and MFA\nPasswords must be at least 14 characters long and must be changed every 180 days. Multi-factor authentication (MFA) using the Acme Authenticator app is mandatory for email, VPN and all internal tools.",
+      "3. Passwords and MFA\n3.2 MFA details\nSMS codes are not accepted as a second factor. Users who lose access to the Acme Authenticator app must contact the IT Service Desk, which will verify identity by video call before resetting MFA. Hardware security keys are mandatory for administrators of production systems and for the Finance and HR systems teams."
+    ],
+    "reference": "Service account credentials and API keys must be stored in the AcmeVault secrets store and rotated every 90 days. They must never be committed to source code repositories."
+  },
+  {
+    "user_input": "I'm still on probation. How much annual leave can I take in my first 3 months, and what will my notice period be once I'm confirmed?",
+    "response": "During your first 3 months of employment while on probation, you may take at most 3 days of annual leave [1], [2]. Once you are confirmed, your notice period will be 60 days [4].",
+    "retrieved_contexts": [
+      "13. Leave During Probation\nEmployees on probation accrue annual leave normally but may take at most 3 days of annual leave during their first 3 months of employment.\nThe probation period is 6 months (see the Employee Handbook). Sick leave, bereavement leave and parental leave are available during probation without restriction. Employees on probation are not eligible for sabbatical or a negative annual leave balance.",
+      "3. Probation\n3.2 Restrictions during probation\nEmployees on probation:\n- may take at most 3 days of annual leave during their first 3 months (see the Leave Policy);\n- are not eligible for fully remote arrangements or sabbaticals;\n- are not eligible for internal transfers;\n- have a notice period of 30 days.\nMaternity leave pauses the probation clock.",
+      "4. Annual Leave\n4.3 Negative balance\nEmployees may take up to 3 days of annual leave in advance of accrual (a negative balance), provided they are confirmed employees. Employees on probation may not go into a negative balance.",
+      "4. Notice Period\nThe notice period is 60 days for confirmed employees and 30 days for employees still on probation. Notice period buy-out is at the company's discretion."
+    ],
+    "reference": "Employees on probation may take at most 3 days of annual leave during their first 3 months of employment. Once confirmed, the notice period is 60 days."
+  },
+  {
+    "user_input": "so if a guy wants paternity leave and he is on probation what happens to his probation clock and who approves it? i heard maternity pauses the clock but not sure about dads",
+    "response": "Based on the provided excerpts, here are the details regarding paternity leave for an employee on probation:\n\n*   **Probation Clock:** The probation clock is paused during parental leave (which includes paternity leave). This applies to both maternity and paternity leave [1].\n*   **Approval Authority:** The provided policy excerpts do not specify who approves paternity leave. They only detail eligibility, duration blocks, and the effect on the probation period [1], [3].\n\n**Additional Context for Probationary Employees:**\nEmployees on probation are eligible for parental leave with no minimum service requirement [1]. However, they may take at most 3 days of annual leave during their first 3 months of employment [2], [4]. Paternity leave must be taken in up to 3 blocks, and any unused days within 6 months of the birth or adoption lapse without encashment [3].",
+    "retrieved_contexts": [
+      "7. Parental Leave\n7.3 Eligibility\nParental leave is available from the date of joining; there is no minimum service requirement. Employees on probation are eligible for parental leave, and the probation clock is paused during maternity leave.",
+      "3. Probation\n3.2 Restrictions during probation\nEmployees on probation:\n- may take at most 3 days of annual leave during their first 3 months (see the Leave Policy);\n- are not eligible for fully remote arrangements or sabbaticals;\n- are not eligible for internal transfers;\n- have a notice period of 30 days.\nMaternity leave pauses the probation clock.",
+      "7. Parental Leave\n7.2 Paternity leave details\nPaternity leave may be taken in up to 3 blocks. Any days not used within 6 months of the birth or adoption lapse and are not encashed.",
+      "13. Leave During Probation\nEmployees on probation accrue annual leave normally but may take at most 3 days of annual leave during their first 3 months of employment.\nThe probation period is 6 months (see the Employee Handbook). Sick leave, bereavement leave and parental leave are available during probation without restriction. Employees on probation are not eligible for sabbatical or a negative annual leave balance."
+    ],
+    "reference": "Parental leave, including paternity leave, is available during probation without restriction. The policy states only that maternity leave pauses the probation clock; it does not say that paternity leave does. Paternity leave should be applied for 4 weeks before the start where possible and is approved by the reporting manager."
+  },
+  {
+    "user_input": "What are the rules for using the Acme Authenticator app on a personal phone, and can I use my personal laptop for Acme work?",
+    "response": "You may use your personal phone for the Acme Authenticator app only after enrolling in the mobile device management (MDM) app, which creates a separate work profile [1]. You cannot use your personal laptop to access Acme systems; it is permitted only for accessing the employee self-service pages of AcmePeople through a browser [1], [2].",
+    "retrieved_contexts": [
+      "5. Devices\n5.2 Personal devices (BYOD)\nPersonal phones may be used for email, chat and the Acme Authenticator app only after enrolling in the mobile device management (MDM) app, which creates a separate work profile. Personal laptops and tablets must not be used to access Acme systems, except for the employee self-service pages of AcmePeople through a browser.",
+      "17. Frequently Asked Questions\nCan I use my personal laptop to check email while my company laptop is being repaired?\nNo. Ask the IT Service Desk for a loaner laptop. Personal laptops may only be used for AcmePeople self-service in a browser.",
+      "8. Acceptable Use\n- Company systems are for business use; limited personal use is allowed if it does not affect work or security.\n- Installing software from outside the Acme Software Centre requires IT approval.\n- Using personal email or personal cloud storage (for example personal Google Drive or Dropbox) for Acme data is prohibited.\n- Users must not attempt to bypass security controls such as the VPN, endpoint protection or USB blocking.",
+      "3. Passwords and MFA\n3.2 MFA details\nSMS codes are not accepted as a second factor. Users who lose access to the Acme Authenticator app must contact the IT Service Desk, which will verify identity by video call before resetting MFA. Hardware security keys are mandatory for administrators of production systems and for the Finance and HR systems teams."
+    ],
+    "reference": "Personal phones may be used for email, chat and the Acme Authenticator app only after enrolling in the mobile device management (MDM) app, which creates a separate work profile. Personal laptops and tablets must not be used to access Acme systems, except for the employee self-service pages of AcmePeople through a browser."
+  },
+  {
+    "user_input": "Which leave types are unpaid?",
+    "response": "Based on the policy excerpts, the following leave types are unpaid:\n\n*   **Sabbatical**: Entitlement is up to 3 months and does not carry forward [1].\n*   **Leave without pay**: Entitlement is up to 30 days per year and does not carry forward [1].",
+    "retrieved_contexts": [
+      "3. Summary of Leave Types\n| Leave type        | Entitlement                   | Paid?   | Carries forward?      |   Section |\n|-------------------|-------------------------------|---------|-----------------------|-----------|\n| Compensatory off  | 1 day per eligible day worked | Yes     | Expires after 60 days |        10 |\n| Sabbatical        | Up to 3 months                | No      | Not applicable        |        11 |\n| Leave without pay | Up to 30 days per year        | No      | Not applicable        |        12 |",
+      "3. Summary of Leave Types\n| Leave type                                | Entitlement               | Paid?   | Carries forward?   |   Section |\n|-------------------------------------------|---------------------------|---------|--------------------|-----------|\n| Bereavement leave                         | 5 working days per event  | Yes     | Not applicable     |         8 |\n| Marriage leave                            | 3 working days, once      | Yes     | Not applicable     |         9 |",
+      "3. Summary of Leave Types\nThe table below summarises every leave type. Details, eligibility and documentation rules follow in later sections.",
+      "3. Summary of Leave Types\n| Leave type                                | Entitlement               | Paid?   | Carries forward?   |   Section |\n|-------------------------------------------|---------------------------|---------|--------------------|-----------|\n| Annual leave (less than 5 years' service) | 18 days per calendar year | Yes     | Up to 10 days      |         4 |\n| Annual leave (5 or more years' service)   | 24 days per calendar year | Yes     | Up to 10 days      |         4 |\n| Sick leave                                | 12 days per year          | Yes     | No                 |         6 |\n| Maternity leave (birthing parent)         | 26 weeks                  | Yes     | Not applicable     |         7 |\n| Paternity leave (non-birthing parent)     | 15 working days           | Yes     | Not applicable     |         7 |\n"
+    ],
+    "reference": "Sabbatical (up to 3 months) and leave without pay (up to 30 days per year) are unpaid."
+  },
+  {
+    "user_input": "How much per diem do I get on the day I fly back from a domestic business trip?",
+    "response": "On the day you fly back from a domestic business trip, you receive 75% of the daily rate, which is INR 2,250 (calculated as 75% of INR 3,000) [2], [4].",
+    "retrieved_contexts": [
+      "14. Frequently Asked Questions\nDo I get per diem for a day trip from Bengaluru to Chennai?\nYes, 50% of the domestic rate (INR 1,500) if the trip lasts more than 8 hours.",
+      "9. Per Diem\nMeals and incidentals are covered by a daily allowance of INR 3,000 for domestic travel and USD 75 for international travel. No receipts are needed for per diem.",
+      "9. Per Diem\n9.2 Worked example\nAn employee travels from Hyderabad to Mumbai on Monday morning and returns on Wednesday evening. They receive 75% of INR 3,000 for Monday (INR 2,250), 100% for Tuesday (INR 3,000) and 75% for Wednesday (INR 2,250), a total of INR 7,500.",
+      "9. Per Diem\n9.1 How per diem is calculated\n- Per diem is paid for each calendar day on which the employee is travelling and away from their home city overnight.\n- On the departure day and the return day, 75% of the daily rate is paid.\n- Day trips with no overnight stay receive 50% of the daily rate if the trip lasts more than 8 hours.\n- Where meals are provided by a client, conference or hotel package, per diem is not reduced."
+    ],
+    "reference": "On the departure day and the return day, 75% of the daily rate is paid. The domestic per diem is INR 3,000, so the return day pays INR 2,250."
+  },
+  {
+    "user_input": "I'm an L4 employee. Can I get a premium economy upgrade on an international flight?",
+    "response": "No, you cannot get a premium economy upgrade on an international flight. According to the policy, premium economy upgrades are \"Not reimbursed\" for employees at levels L1 through L4 [1]. Additionally, the flight entitlement table specifies that employees at L1-L4 must fly in Economy class regardless of the trip type or duration [3].",
+    "retrieved_contexts": [
+      "6. Air Travel\n6.1 Flight entitlement table\n| Trip type               | L1 - L4        | L5 and above                                     |\n|-------------------------|----------------|--------------------------------------------------|\n| Premium economy upgrade | Not reimbursed | Allowed on international flights of 5 to 8 hours |\nThe 8-hour threshold refers to the scheduled duration of a single flight segment, not the total journey including layovers. A Bengaluru to London journey with a layover in Dubai is two segments of under 8 hours each and is therefore economy class.",
+      "6. Air Travel\nDomestic flights must be booked in economy class. International flights longer than 8 hours may be booked in business class for employees at level L5 or above; all other international travel is economy class. All flights must be booked through the AcmeTravel portal at least 14 days in advance where possible.",
+      "6. Air Travel\n6.1 Flight entitlement table\n| Trip type                        | L1 - L4   | L5 and above   |\n|----------------------------------|-----------|----------------|\n| Domestic, any duration           | Economy   | Economy        |\n| International, 8 hours or less   | Economy   | Economy        |\n| International, more than 8 hours | Economy   | Business       |",
+      "14. Frequently Asked Questions\nI am L5 and my flight to San Francisco is 17 hours. Can I fly business class?\nYes. International flight segments longer than 8 hours may be booked in business class for L5 and above."
+    ],
+    "reference": "No. Premium economy upgrades are not reimbursed for L1 to L4 employees; they are allowed only for L5 and above, on international flights of 5 to 8 hours."
+  }
+]
